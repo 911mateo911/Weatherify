@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weatherify</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <nav>
+    <h1>Weatherify</h1>
+    <img src="images/search.svg" />
+    <div class="searchcontainer searchHide">
+      <div class="searchbox">
+        <img src="images/close.png">
+        <input type="text" placeholder="Search for cities">
+      </div>
+      <div class="searchResults"></div>
+    </div>
+  </nav>
+  <section id="tirana">
+    <div class="tiranatxt invisible">
+      <img class="tiranaimg" alt="" />
+      <h2>Tirana</h2>
+      <h4 class="tiranamood">Heavy Rain</h4>
+    </div>
+    <!-- this is some svg i copied..nice -->
+    <div class="loader loader--style2" title="1">
+      <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;"
+        xml:space="preserve">
+        <path fill="#000"
+          d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
+          <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25"
+            dur="0.6s" repeatCount="indefinite" />
+        </path>
+      </svg>
+    </div>
+    <div class="tiranatemp invisible">
+      <h2 class="tiranatmp">29°C</h2>
+      <h4 class="tiranafeels">Feels like 5°C</h4>
+    </div>
+  </section>
+
+  <section id="tiranamore">
+    <div class="wind">
+      <p class="weatherTir">Wind</p>
+      <h4 class="tempTir">33 km/h</h4>
+    </div>
+    <div class="humidity">
+      <p class="weatherTir">Humidity</p>
+      <h4 class="tempTir">88</h4>
+    </div>
+    <div class="pressure">
+      <p class="weatherTir">Pressure</p>
+      <h4 class="tempTir">1008</h4>
+    </div>
+  </section>
+  <main id="cities" class="invisible"></main>
+  <div id="loading">
+    <div id="animation">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+    <p>Getting cities from server</p>
+  </div>
+  <section id="specificWeather" class="righthidden">
+    <div class="specificNav">
+      <img src="images/back.png" class="goback" />
+      <h2 class="cityName">Tirana</h2>
+    </div>
+    <div class="specificMain">
+      <div class="mainwimg invisible">
+        <img class="specificPic" />
+        <h4 class="specificdesc">Clear</h4>
+      </div>
+      <div class="loader2 loader--style2" title="1">
+        <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;"
+          xml:space="preserve">
+          <path fill="#000"
+            d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
+            <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25"
+              dur="0.6s" repeatCount="indefinite" />
+          </path>
+        </svg>
+      </div>
+      <div class="mainnoimg invisible">
+        <h1 class="specificTemp">29°C</h1>
+        <h4 class="specificfeel">4°C</h4>
+      </div>
+    </div>
+    <div class="specother invisible">
+      <div class="wind">
+        <p class="weatherTir">Wind</p>
+        <h4 class="tempcit">33 km/h</h4>
+      </div>
+      <div class="humidity">
+        <p class="weatherTir">Humidity</p>
+        <h4 class="tempcit">88</h4>
+      </div>
+      <div class="pressure">
+        <p class="weatherTir">Pressure</p>
+        <h4 class="tempcit">1008</h4>
+      </div>
+    </div>
+    <div class="loader3 loader--style2" title="1">
+      <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;"
+        xml:space="preserve">
+        <path fill="#000"
+          d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
+          <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25"
+            dur="0.6s" repeatCount="indefinite" />
+        </path>
+      </svg>
+    </div>
+    <div class="otherdata invisible">
+      <div class="othercont">
+        <p class="whichtemp">Max Temperature:</p>
+        <h4 class="othertemp">15</h4>
+      </div>
+      <div class="othercont">
+        <p class="whichtemp">Min Temperature:</p>
+        <h4 class="othertemp">3</h4>
+      </div>
+    </div>
+  </section>
+  <script src="/js/index.js"></script>
+</body>
+
+</html>

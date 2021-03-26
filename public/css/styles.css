@@ -1,0 +1,556 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  flex-direction: column;
+  background-color: #f7f7f9;
+  max-width: 500px;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav h1 {
+  font-family: "Fredoka One";
+  margin: 3% 10%;
+  color: #161d6f;
+  font-size: 1.8rem;
+}
+
+nav img {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 3% 10%;
+}
+
+.searchcontainer {
+  top: 2%;
+  max-width: 500px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: fit-content;
+  z-index: 1;
+  border-radius: 5px 5px 20px 20px;
+}
+
+.searchResults {
+  width: 95%;
+  max-width: 500px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 0 auto 0 auto;
+  z-index: 2;
+}
+
+.searchbox {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 1px solid #f6f6f6;
+}
+
+.searchbox img {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 10px;
+}
+
+.searchbox input{
+  border: none;
+  font-family: Open Sans;
+  font-weight: 700;
+  height: 1.8rem;
+  width: calc(480px - 1.8rem);
+  font-size: 1.2rem;
+}
+
+.searchbox input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #bbb;
+  font-family: Open Sans;
+  font-weight: normal;
+}
+
+/* TIRANAS WEATHER DEFAULT */
+#tirana {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 95%;
+  border-radius: 20px;
+  background-color: #5873ff;
+  color: #fffeff;
+  margin: auto;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02), 
+              0 2px 4px rgba(0,0,0,0.02), 
+              0 4px 8px rgba(0,0,0,0.02), 
+              0 8px 16px rgba(0,0,0,0.02),
+              0 16px 32px rgba(0,0,0,0.02), 
+              0 32px 64px rgba(0,0,0,0.02);
+}
+
+#tirana img {
+  width: 5rem;
+  height: 5rem;
+  margin: 5%;
+}
+
+.tiranatxt {
+  width: 40%;
+  margin-left: 5%;
+  transition: all 0.7s;
+}
+
+.tiranatemp {
+  width: 40%;
+  margin-right: 5%;
+  text-align: center;
+  transition: all 0.7s;
+}
+
+h2,
+h4 {
+  font-family: Open Sans;
+}
+
+.tiranatxt h2,
+.tiranatxt h4 {
+  margin: 5% 10%;
+}
+
+.tiranatemp h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 2%;
+}
+
+.tiranatemp h4 {
+  margin: 0;
+}
+/* //////////////////////////////////////// */
+
+/* Tiranamore */
+#tiranamore {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 95%;
+  border-radius: 20px;
+  margin: 3% auto;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02), 
+              0 2px 4px rgba(0,0,0,0.02), 
+              0 4px 8px rgba(0,0,0,0.01), 
+              0 8px 16px rgba(0,0,0,0.01),
+              0 16px 32px rgba(0,0,0,0.01), 
+              0 32px 64px rgba(0,0,0,0.01);
+}
+
+.wind,
+.humidity,
+.pressure {
+  flex-basis: 33.333%;
+  text-align: center;
+}
+
+.weatherTir {
+  font-family: Fredoka One;
+  color: #c4c7c9;
+  margin: 10% 0 5% 0;
+}
+
+#tiranamore h4 {
+    color: #0c0c0c;
+    font-size: 1.1rem;
+    margin: 5% 0 10% 0;
+}
+
+/* //////////////////////// */
+
+/* Main cities */
+#cities {
+  width: 95%;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 0 auto 3% auto;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02), 
+              0 2px 4px rgba(0,0,0,0.02), 
+              0 4px 8px rgba(0,0,0,0.02), 
+              0 8px 16px rgba(0,0,0,0.02),
+              0 16px 32px rgba(0,0,0,0.02), 
+              0 32px 64px rgba(0,0,0,0.02);
+  transition: opacity 1s;
+}
+
+.city:nth-of-type(1) {
+  border-radius: 20px 20px 5px 5px;
+  background-color: #f6f6f6;
+  border-collapse: collapse;
+  margin: 5px 5px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  flex-basis: 100%;
+} 
+.city {
+  border-radius: 5px;
+  background-color: #f6f6f6;
+  border-collapse: collapse;
+  margin: 0 5px 5px 5px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.city:last-of-type {
+  border-radius: 5px 5px 20px 20px;
+  background-color: #f6f6f6;
+  border-collapse: collapse;
+  margin: 0px 5px 5px 5px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  flex-basis: 100%;
+}
+
+.qytet {
+  color: #161d6f;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0 5%;
+}
+
+.city img {
+    border-radius: 50%;
+    background-color: white;
+    padding: 7px;
+    margin: 0 2%;
+}
+/* /////////////////// */
+
+/* Specific Weather */
+#specificWeather {
+  width: 100%;
+  background-color: #f7f7f9;
+  max-width: 500px;
+}
+/* Nav */
+.specificNav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.specificNav img {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 3% 10%;
+}
+
+.specificNav h2 {
+  font-family: Fredoka One;
+  margin: 1rem;
+}
+/* ///////////////////////////////////// */
+
+/* main */
+.specificMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #c2c3cc;
+  flex-direction: row;
+  width: 95%;
+  border-radius: 20px;
+  background-color: #5873ff;
+  color: #fffeff;
+  margin: 3% auto 0 auto;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02), 
+              0 2px 4px rgba(0,0,0,0.02), 
+              0 4px 8px rgba(0,0,0,0.02), 
+              0 8px 16px rgba(0,0,0,0.02),
+              0 16px 32px rgba(0,0,0,0.02), 
+              0 32px 64px rgba(0,0,0,0.02);
+}
+
+.mainwimg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  transition: all 0.7s;
+}
+
+.specificPic {
+  height: 5rem;
+  width: 5rem;
+  margin: 10px 20px 0 50px;
+}
+
+.specificdesc {
+  font-size: 1.1rem;
+  margin: 10px;
+}
+
+.mainnoimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 55%;
+  flex-direction: column;
+  transition: all 0.7s;
+}
+
+.specificTemp {
+  font-size: 4.15rem;
+  font-family: Open Sans;
+  margin: 0;
+}
+
+.specificfeel {
+  font-size: 1.1rem;
+  margin: 10px;
+}
+/* //////////////////////////////////// */
+
+/* More */
+.specother {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 95%;
+  border-radius: 20px;
+  margin: 3% auto;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02), 
+              0 2px 4px rgba(0,0,0,0.02), 
+              0 4px 8px rgba(0,0,0,0.01), 
+              0 8px 16px rgba(0,0,0,0.01),
+              0 16px 32px rgba(0,0,0,0.01), 
+              0 32px 64px rgba(0,0,0,0.01);
+}
+
+/* other temp */
+.otherdata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 95%;
+  margin: auto;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02), 
+              0 2px 4px rgba(0,0,0,0.02), 
+              0 4px 8px rgba(0,0,0,0.01), 
+              0 8px 16px rgba(0,0,0,0.01),
+              0 16px 32px rgba(0,0,0,0.01), 
+              0 32px 64px rgba(0,0,0,0.01);
+  margin-bottom: 5%;
+}
+
+.othercont {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 95%;
+}
+
+.othercont:nth-of-type(1) {
+  border-bottom: 1px solid #d7ddfe;
+}
+
+.whichtemp, .othertemp {
+  font-family: Open Sans;
+  font-weight: 700;
+  margin: 5%;
+}
+
+/* Use cases */
+
+.righthidden {
+  position: fixed;
+  left: 100%;
+  top: 0;
+  height: 100%;
+}
+
+.blur {
+  filter: blur(1px);
+}
+
+.rightShow {
+  animation: showRight 0.5s forwards;
+}
+
+#loading {
+  height: 100px;
+  position: absolute;
+  margin: auto;
+  top: 70%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#loading p {
+  font-family: "Open Sans";
+  font-weight: 800;
+  margin: 2px;
+}
+
+#animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #5873ff;
+  border-radius: 50%;
+  margin: 3px;
+  position: relative;
+}
+
+.searchHide {
+  left: 100%;
+}
+
+.animate {
+  animation: load 0.7s;
+}
+
+.hideanim {
+  animation: hideRight 0.5s forwards;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.loader3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -3%;
+}
+
+.loader3 svg path {
+  fill: black;
+}
+
+.loader4 svg path {
+  fill: black;
+}
+
+svg path{
+  fill: white;
+}
+
+@keyframes load {
+  0% {
+    bottom: 0;
+  }
+
+  50% {
+    bottom: 30px;
+  }
+
+  100% {
+    bottom: 0px;
+  }
+}
+
+.open {
+  animation: opened 0.2s forwards;
+}
+
+@keyframes opened {
+  from {
+    width: 20%;
+    height: 30px;
+  }
+  to {
+    position: absolute;
+    width: 90%;
+    height: 95%;
+  }
+}
+
+@keyframes showRight {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes hideRight {
+  from {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .tiranatemp h2 {
+    font-size: 3rem;
+  }
+
+  #tiranamore h4 {
+    font-size: 0.9rem;
+  }
+
+  .specificTemp {
+    font-size: 3rem;
+  }
+
+  .specificfeel {
+    font-size: 0.9rem;
+  }
+}
