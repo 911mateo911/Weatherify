@@ -35,4 +35,3 @@ Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
-![2021-03-30 12 40 (1)](https://user-images.githubusercontent.com/68548704/112977841-d283cc80-9156-11eb-833f-d4eb633b0c02.png)
