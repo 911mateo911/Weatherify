@@ -14,11 +14,13 @@ As simple as that.Just testing my skills.
 
 ## Preview
 
+https://user-images.githubusercontent.com/68548704/112974925-51770600-9153-11eb-92d8-8c3501e03602.mp4
 
 ## Installation
 
 ```bash
 npm install
+node app.js
 ```
 
 ## Usage
