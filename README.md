@@ -3,7 +3,7 @@
 
 <a href="https://weatherify-albania.herokuapp.com/"><img src="https://github.com/911mateo911/Weatherify/blob/master/readme/heroku.png?raw=true" height="100px"></a>
 
-Weatherify is a simple web app,(now as a PWA thanks to Progressier) to display weather information about some of albanian cities.It's my first "Full-Stack" projects:
+Weatherify is a simple web app,(now as a PWA thanks to Progressier) to display weather information about some of albanian cities.It's my first "Full-Stack" project using:
 ### Backend: Node/Express JS
 ### Front: HTML/CSS/JS
 
