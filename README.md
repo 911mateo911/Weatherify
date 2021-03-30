@@ -13,7 +13,10 @@ As simple as that.Just testing my skills.
 [weatherify-albania.herokuapp.com](https://weatherify-albania.herokuapp.com/)
 
 ## Preview
-<iframe src='//gifs.com/embed/lxKG07' frameborder='0' scrolling='no' width='440' height='400' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
+![2021-03-30 12 40 (2)](https://user-images.githubusercontent.com/68548704/112977797-c5ff7400-9156-11eb-86e1-eb9774e273bb.png)
+![2021-03-30 12 40 (1)](https://user-images.githubusercontent.com/68548704/112977850-d57ebd00-9156-11eb-9b8f-abbb0f74471c.png)
+![2021-03-30 12 40](https://user-images.githubusercontent.com/68548704/112977856-d879ad80-9156-11eb-90b2-dd06d3cbd4d5.png)
+
 
 ## Installation
 
@@ -32,3 +35,4 @@ Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+![2021-03-30 12 40 (1)](https://user-images.githubusercontent.com/68548704/112977841-d283cc80-9156-11eb-833f-d4eb633b0c02.png)
