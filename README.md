@@ -13,10 +13,9 @@ As simple as that.Just testing my skills.
 [weatherify-albania.herokuapp.com](https://weatherify-albania.herokuapp.com/)
 
 ## Preview
-![2021-03-30 12 40 (2)](https://user-images.githubusercontent.com/68548704/112977797-c5ff7400-9156-11eb-86e1-eb9774e273bb.png)
-![2021-03-30 12 40 (1)](https://user-images.githubusercontent.com/68548704/112977850-d57ebd00-9156-11eb-9b8f-abbb0f74471c.png)
-![2021-03-30 12 40](https://user-images.githubusercontent.com/68548704/112977856-d879ad80-9156-11eb-90b2-dd06d3cbd4d5.png)
-
+<img src="https://user-images.githubusercontent.com/68548704/112977797-c5ff7400-9156-11eb-86e1-eb9774e273bb.png" width="40%">
+<img src="https://user-images.githubusercontent.com/68548704/112977850-d57ebd00-9156-11eb-9b8f-abbb0f74471c.png" width="40%">
+<img src="https://user-images.githubusercontent.com/68548704/112977856-d879ad80-9156-11eb-90b2-dd06d3cbd4d5.png" width="40%">
 
 ## Installation
 
